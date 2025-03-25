@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(104,98,208,1) 0%, rgba(211,182,225,1) 53%, rgba(131,210,228,1) 100%);
+    display: flex;
+    justify-content: center; /* Centers container horizontally */
+    align-items: center; /* Centers container vertically */
+    height: 100vh;
+}
+/* Fixed Horizontal Rule */
+hr {
+    position: relative; /* Ensures it stays inside the container */
+    width: 100%;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, rgba(104,98,208,1), rgba(211,182,225,1));
+    margin: 10px 0; /* Add some spacing */
+}
+.container {
+    width: 80%;
+    max-width: 680px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Ensures all child elements are left-aligned */
+    position: relative;
+}
+
+
+
+/* Question Styling */
+.question {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    text-align: left; /* Keeps the text left-aligned */
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* List Styling */
+.list {
+    list-style: none;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Option Box */
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #7b68ee;
+    padding: 12px 18px;
+    border-radius: 45px;
+    cursor: pointer;
+    width: fit-content;
+    transition: all 0.3s ease;
+    margin: 10px 0; /* Keeps items left-aligned */
+}
+
+/* Hover Effect */
+li:hover {
+    background: rgba(123, 104, 238, 0.1);
+    transform: scale(1.05);
+}
+
+/* Selected Option Effect */
+.option:checked + label {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: #7b68ee;
+    box-shadow: 0px 0px 10px rgba(123, 104, 238, 0.8);
+    transition: all 0.3s ease;
+}
+
+/* Button Container (Centered Button) */
+.btn {
+    width: 100%; /* Ensures it spans full width */
+    display: flex;
+    justify-content: center; /* Centers the button */
+    padding: 20px 0;
+}
+
+/* Submit Button */
+#submit {
+    padding: 12px 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    background: linear-gradient(to right, #4f4fdb, #6f6fed);
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(76, 76, 237, 0.3);
+}
+
+#submit:hover {
+    background: linear-gradient(to right, #6f6fed, #4f4fdb);
+    transform: scale(1.1);
+}
+
+.login_body{
+    background: linear-gradient(90deg, rgba(104,98,208,1) 0%, rgba(211,182,225,1) 53%, rgba(131,210,228,1) 100%);
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+}
+.login-container{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+h2 {
+    margin-bottom: 20px;
+}
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.login-btn {
+    background: linear-gradient(to right, #4f4fdb, #6f6fed);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+.login-btn:hover {
+    background: linear-gradient(to right, #6f6fed, #4f4fdb);
+}
+
+.login-p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-a {
+    color: #4f4fdb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-a:hover {
+    text-decoration: underline;
+}
+
+
+/* Signup Page Styling */
+.signup_body {
+    background: linear-gradient(90deg, rgba(104,98,208,1) 0%, rgba(211,182,225,1) 53%, rgba(131,210,228,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.signup-container {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 380px;
+}
+
+.signup-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#signup-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+#signup-form input:focus {
+    border-color: #4f4fdb;
+    box-shadow: 0px 0px 5px rgba(79, 79, 219, 0.5);
+}
+
+/* Signup Button */
+#signup-form button {
+    background: linear-gradient(to right, #4f4fdb, #6f6fed);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+#signup-form button:hover {
+    background: linear-gradient(to right, #6f6fed, #4f4fdb);
+    transform: scale(1.05);
+}
+
+/* Link to Login */
+.signup-container p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-container a {
+    color: #4f4fdb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-container a:hover {
+    text-decoration: underline;
+}
+
+
+/* Score Result Box */
+.result {
+    text-align: center;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Score Heading */
+.result h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #4f4fdb;
+    margin-bottom: 15px;
+}
+
+/* Score Message */
+.result p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Leaderboard Styling */
+.leaderboard {
+    background: linear-gradient(90deg, rgba(104,98,208,1) 0%, rgba(211,182,225,1) 53%, rgba(131,210,228,1) 100%);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.leaderboard h3 {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Leaderboard List */
+.leaderboard ol {
+    list-style: decimal inside;
+    padding: 0;
+    margin: 0;
+}
+
+.leaderboard li {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4f4fdb;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Play Again Button */
+.reload-button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    background: linear-gradient(to right, #4f4fdb, #6f6fed);
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(76, 76, 237, 0.3);
+}
+
+.reload-button:hover {
+    background: linear-gradient(to right, #6f6fed, #4f4fdb);
+    transform: scale(1.1);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
